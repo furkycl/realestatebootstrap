@@ -1,0 +1,274 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Emlak Sitesi">
+    <meta name="author" content="Cihad Furkan Yücel">
+    <title>X Emlak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://media.istockphoto.com/id/943476388/tr/vekt%C3%B6r/pin-harita-simgesini-d%C3%BCz-vekt%C3%B6r-siluet-izole.jpg?s=1024x1024&w=is&k=20&c=1DkzbJP8GBbqdUj_lKVZENiW2CRobKoacLJenPQQ_hU=">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Herseyden önce esneklik için flex classı bodye-->
+<body class="d-flex flex-column h-100">
+<!--Flex shrink flex olan bir kutunun içinde ezilme küçülme büyüme gibi özellikleri kazandırır.-->
+    <main class="flex-shrink-0">
+<!--Navbar oluşumu large exranda expand yani collapsenin açılcağı ve backgraund rengi-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--container yapısı ile ortalama ve padding 5 burdaki 5 bootstrap ayarına göre 5 pixel değil. -->
+            <div class="container px-5">
+<!--Navbarın içerisindeki başlık veya logo tarzı sol taraftaki varlık için kullanılan navbar-brand classı-->
+                <a class="navbar-brand" href="index.html">X Emlak</a>
+<!--Küçük ekranda yerini buttonlara bırakan simgenin kuruluşu collapse özelliği ile yerini 
+hamburger menuye bırakcak elementlerin ayarlanması expanded özelliği ile large ekranda tekrar yerini kaybetmesi-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" 
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<!--açık large ekran ve büyükte gözükecek olan navbarın acılması icin collapse ve show classı 
+ayrıca verilen id yukarıda target olarak kullanılıyor-->
+                <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+<!--margin start auto ile soldan verilen boşluğun ayarlanması margın bottom 2 large ekranda mb-0 oluyor-->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<!--nav itemlerin oluşturulması içerisinde a tagına linklerin bağlantısı-->
+                        <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!--baslık kısmı arka plan dark py yani padding y ekseni aşağıdan yukarıdan 5-->
+        <header class="bg-dark py-5">
+<!--tekrardan container ile ortalanan içerik padding x sağdan ve soldan 5 olcak sekilde-->
+            <div class="container px-5">
+<!--bootstram mantıgı içerisine sutunların koyulcağı satırın row ile oluşturulması
+gx horizontal yani yatay x eksenindeki column arası bolşuğu ayarlayıp item ve iceriği ortalayan classlar-->
+                <div class="row gx-5 align-items-center justify-content-center">
+<!--large ekranda 8 xlarge de 7 xx large de 6 olcak sekilde responsive div oluşturma-->
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+<!--margin y düzleminde yukarı aşağı 5 er margin, text ortalama xl ekranda text kısmı sola almak için text-xl-start -->
+                        <div class="my-5 text-center text-xl-start">
+<!--display-5 başlık boyutu için 1 den 5 e doğru h1-h5 elementi gibi
+fw-bolder kalın yazması için text beyaz ve margin bottum 2  -->
+                            <h1 class="display-5 fw-bolder text-white mb-2">Ömrünüzü uzatabilecek meskenler buluyoruz!</h1>
+<!--lead diğer paragraflardan öna çıkarmak istediğimiz paragrafı ifade eder biraz daha büyük farklı alt başlık gibi
+text beyazlıgı opaklaştırma text-white-50 ile margin bottom 4-->
+                            <p class="lead fw-normal text-white-50 mb-4">
+                                İlaç kullanmayı bırakın! E ve D vitaminlerini direkt olarak doğadan, kaynağından alabileceğiniz dünyanın en büyük oksijen 
+                                kaynaklarından birinde yaz kış kalabilme imkanlarından yararlanma şansı sizleri bekliyor.</p>
+<!--displayı grip gap 2 button arası 3 small ekranda displayı flex small ekranda içerik ortalama
+xlarge ekranda ise içeriği başa alma-->
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+<!--buton özelliği primart padding x eksen 4 margin end small ekranda 3 btn-lg large button-->
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#icerik">İncelemeye Başlayın</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Daha Fazlası için...</a>
+                            </div>
+                        </div>
+                    </div>
+<!--xl ekrana kadar display none küçük ekranda görünmeyen xl de 5 col alarak görünmeye başlayan div
+önemli nokta:d-xl-block elemanı xl ve sonrası ekranda display none özelliğini geri aktif etmek için-->
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+<!--kendisini içeren divi kapsaması için oluşturulan img-fluid ve rounded3 = border-radious -->
+                        <img class="img-fluid rounded-3 my-5" src="https://www.hepsiemlak.com/emlak-yasam/wp-content/uploads/2017/11/emlak-yonetmeligi-emlakcinin-gundeminde.jpeg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </header>
+<!--İcerik kısmını oluşturma section ile semantik bir düzen padding y düzleminde 5 buton a href verilen id ile
+ulasım sağlama-->
+        <section class="py-5" id="icerik">
+<!-- icerik kısmı ortalamak sayfa düzeni için container yapımı padding x düzlem 5
+margin y düzlemi 5-->
+            <div class="container px-5 my-5">
+<!--bootstrap klasik row düzeni oluşturup gx ile horizontal itemler arası boşluğu 5  -->
+                <div class="row gx-5">
+<!--row içerisindeki col ların düzeninin verilmesi sayfa içeriğinde tek h1 olması gerektiği için
+içerideki tagı h2 ile yapıp fw-bolder classı ile bold yapılması-->
+                    <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Sunduğumuz hizmetlerden bazıları.</h2></div>
+<!--2.col yapısı-->
+                    <div class="col-lg-8">
+                        <div class="row gx-5 row-cols-1 row-cols-md-2">
+                            <div class="col mb-5 h-100">
+                                <div class="icerikikon bg-primary bg-gradient text-white rounded-3 mb-3">
+                                    <i class="ic fa-solid fa-key fa-2x m-2"></i></div>
+                                <h2 class="h5">Anahtar Teslim</h2>
+                                <p class="mb-0">Herhangi bir extra masraf ödemeden evinizi kullanıma hazır bir şekilde teslim ediyoruz.</p>
+                            </div>
+                            <div class="col mb-5 h-100">
+                                <div class="icerikikon bg-primary bg-gradient text-white rounded-3 mb-3">
+                                    <i class="ic fa-solid fa-user-secret fa-2x m-2"></i></div>
+                                <h2 class="h5">Alanında Uzman Ekip</h2>
+                                <p class="mb-0">Alanında uzman ekibimiz ile ihtiyacınızı tam anlamıyla karşılayacak hizmeti sağlıyoruz.</p>
+                            </div>
+                            <div class="col mb-5 mb-md-0 h-100">
+                                <div class="icerikikon bg-primary bg-gradient text-white rounded-3 mb-3">
+                                    <i class="ic fa-solid fa-money-bill fa-2x m-2"></i></div>
+                                <h2 class="h5">Ödeme Kolaylığı</h2>
+                                <p class="mb-0">Ödeme imkanını içiniz rahat edebilcek şekilde kolaylaştırıp kredi imkanı sunuyoruz.</p>
+                            </div>
+                            <div class="col h-100">
+                                <div class="icerikikon bg-primary bg-gradient text-white rounded-3 mb-3">
+                                    <i class="ic fa-solid fa-location-dot fa-2x m-2"></i></div>
+                                <h2 class="h5">Lokasyon Avantajı</h2>
+                                <p class="mb-0">İstediğiniz her konumda bütceye ve ihtiyaca uygun hizmeti sağlıyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--içerik altı söz alıntı kısmı-->
+        <div class="py-5 bg-light">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-10 col-xl-7">
+                        <div class="text-center">
+<!--fs font boyutu margin bottom 4 ve stil-->
+                            <div class="fs-4 mb-4 fst-italic">
+                                "Kimler gayrimenkul konusunda bunalmış hissetmezler? Birçoğumuz için,
+                                 bir ev satın alma fikri şimdiye kadar yapacağımız en büyük satın alma fikrine eşdeğerdir. 
+                                 X Emlak sloganı, ev satın alma"</div>
+<!--alıntı yapan kişinin resmi bilgilerini içeren div
+display flex özelliğine item ve içeriği bootstrap ile hizalama yaparak güzel bir görünüm-->
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img class="alintimage rounded-circle me-3" src="https://media.licdn.com/dms/image/C4E03AQFDy7YipWo28g/profile-displayphoto-shrink_800_800/0/1615753098951?e=1695254400&v=beta&t=MyVDpkgRxV9aN_kE9eMIDZbAXio8mcQwOujGgkHSLwc" alt="...">
+                                <div class="fw-bold">
+                                    Furkan YÜCEL
+                                    <span class="fw-bold text-primary mx-1">/</span>
+                                    CEO, Ankara
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Anasayfa Fırsat ilanlar kısmı-->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="text-center">
+                            <h2 class="fw-bolder">Fırsat İlanlar</h2>
+<!---->
+                            <p class="lead fw-normal text-muted mb-5">İlanlar ile birebir uyumlu gayrimenkul portföyleri.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5">
+<!--Height 100 shadow card yapımı-->
+                        <div class="card h-100 shadow border-0">
+                            <img class="evresim card-img-top" src="https://scontent.fesb4-2.fna.fbcdn.net/v/t1.6435-9/47379799_2138153186324017_8097486896109715456_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=jRLpKpzvu5sAX_hgHmv&_nc_ht=scontent.fesb4-2.fna&oh=00_AfBv8kDp0JQPS3-XfK-VgtfSYsRDvAtmIb0VLsjWZnVOfA&oe=64DA9F1D" alt="...">
+                            <div class="card-body p-4">
+<!-- badge = em verilmiş başlık tipi gibi-->
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Fırsat İlan</div>
+<!--streched link bütün cardı tıklanılabilir link yapıyor-->
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Antalya/Lara Lüx Villa</h5>
+                                </a>
+                                <p class="card-text mb-0">
+                                    Anltaya'da Denize Nazır Lüx Yüksek Giriş Villa</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="alintimage me-3" src="https://cdn2.iconfinder.com/data/icons/random-outline-3/48/random_14-512.png" alt="...">
+                                        <div class="small">
+                                            <div class="fw-bold">Ali Yılmaz</div>
+                                            <div class="text-muted">Mart 12, 2023 · 6 gün önce paylaşıldı</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="evresim card-img-top" src="https://scontent.fesb4-2.fna.fbcdn.net/v/t1.6435-9/47445609_2138152856324050_3170289376072564736_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=k2ofNm7DbV4AX8em7-U&_nc_ht=scontent.fesb4-2.fna&oh=00_AfCrqvwdz-ddkEaRDb-IovAoxFIWdRm_V0AsqEfBpyue1A&oe=64DAA876" alt="...">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Fırsat İlan</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">İstanbul Lüx Villa</h5></a>
+                                <p class="card-text mb-0">
+                                    BEYLİKDÜZÜ SAHİLE YAKIN SATILIK SİTE İÇİ MÜSTAKİL VİLLA FIRSATI</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="alintimage rounded-circle me-3" src="https://cdn2.iconfinder.com/data/icons/random-outline-3/48/random_14-512.png" alt="...">
+                                        <div class="small">
+                                            <div class="fw-bold">Hakan Tek</div>
+                                            <div class="text-muted">March 23, 2023 · 4 gün önce paylaşıldı</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="evresim card-img-top" src="https://scontent.fesb4-1.fna.fbcdn.net/v/t31.18172-8/12976955_256608128019438_4569560714594517781_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=KouEj_Mh80IAX811xq0&_nc_ht=scontent.fesb4-1.fna&oh=00_AfDQQjADqIhW7AgmO67SmvlGbLliSLwBZQtKMri16YTnTw&oe=64DBDC5D" alt="...">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">İlan</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Ankara/Keçiören Müstakil Ev</h5></a>
+                                <p class="card-text mb-0">
+                                    Satılık Ev doğa ile başbaşa.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="alintimage rounded-circle me-3" src="https://cdn2.iconfinder.com/data/icons/random-outline-3/48/random_14-512.png" alt="...">
+                                        <div class="small">
+                                            <div class="fw-bold">Ayşe Urla</div>
+                                            <div class="text-muted">April 2, 2023 · 10 gün önce paylaşıldı</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--Anasayfa iletişim kayıt kısmı arka plan rengine renk geçişi tonları eklemek için kullanılıyor -->
+                <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                        <div class="mb-4 mb-xl-0">
+                            <div class="fs-3 fw-bold text-white">Mail adresiniz ile kayıt olun size ulaşalım.</div>
+                            <div class="text-white-50">Hizmetlerimizden faydalanmak için kayıt olun.</div>
+                        </div>
+                        <div class="ms-xl-4">
+<!--input group input girilcek veya alınca butonları ve inputları inline yapmak bir arada tutmak için kullanılıyor-->
+                            <div class="input-group mb-2">
+                                <input class="form-control" type="text" placeholder="Email adresi giriniz.">
+                                <button class="btn btn-outline-light" id="button-newsletter" type="button">Kayıt Ol</button>
+                            </div>
+                            <div class="small text-white-50">Gizliliğiniz ve güvenliğiniz bizim için önemlidir.</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+ <!--Footer Kısmı-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto"><div class="small m-0 text-white">Created By © Cihad Furkan YÜCEL 2023</div></div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Gizlilik</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="#!">Şartlar</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="#!">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
